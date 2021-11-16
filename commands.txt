@@ -111,3 +111,62 @@ C:\>
 C:\>cd crwn-clothing
 
 C:\crwn-clothing>yarn start
+
+https://sass-lang.com/
+
+C:\crwn-clothing>yarn add node-sass
+
+// Always better to install latest other wise here it will show error
+
+C:\crwn-clothing>rm -rf yarn.lock  // if error comes then only this command
+C:\crwn-clothing>rm -rf node_modules
+C:\crwn-clothing>yarn // finally again installing all modules
+
+
+
+
+
+npm uninstall node-sass
+npm install node-sass@4.14.1
+Or, if using Yarn (default in newer CRA versions)
+
+C:\crwn-clothing>yarn remove node-sass
+C:\crwn-clothing>yarn add node-sass@4.14.1
+
+
+
+
+Pushing Code to git hub
+C:\crwn-clothing>git remote add origin https://github.com/aakhan1572/crwn-clothing.git
+
+C:\crwn-clothing>git add -A
+warning: LF will be replaced by CRLF in package.json.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/App.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in src/index.js.
+The file will have its original line endings in your working directory
+warning: LF will be replaced by CRLF in yarn.lock.
+The file will have its original line endings in your working directory
+
+C:\crwn-clothing>git commit -m "Created project with create react app added files for home  code"
+[master e937e78] Created project with create react app added files for home  code
+ 8 files changed, 759 insertions(+), 83 deletions(-)
+ create mode 100644 commands.txt
+ rewrite src/App.css (100%)
+ rewrite src/App.js (83%)
+ create mode 100644 src/homepage.component.jsx
+ create mode 100644 src/homepage.styles.scss
+
+C:\crwn-clothing>git push origin master
+Enumerating objects: 33, done.
+Counting objects: 100% (33/33), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (32/32), done.
+Writing objects: 100% (33/33), 222.56 KiB | 5.56 MiB/s, done.
+Total 33 (delta 4), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (4/4), done.
+To https://github.com/aakhan1572/crwn-clothing.git
+ * [new branch]      master -> master
+
+C:\crwn-clothing>
